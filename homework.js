@@ -143,6 +143,5 @@ function gcd(a, b) {
             }
         }
     }
-    return a*(2**d);
-
+    return a * (2 ** d);
 }
