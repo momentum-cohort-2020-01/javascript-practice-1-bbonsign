@@ -128,19 +128,19 @@ function gcd(a, b) {
         a = a / 2;
         b = b / 2;
         d += 1;
-        while (a != b) {
-            if (isEven(a)) {
-                a = a / 2;
-            }
-            else if (isEven(b)) {
-                b = b / 2;
-            }
-            else if (a > b) {
-                a = (a - b) / 2;
-            }
-            else {
-                b = (b - a) / 2;
-            }
+    }
+    while (a != b) {
+        if (isEven(a)) {
+            a = a / 2;
+        }
+        else if (isEven(b)) {
+            b = b / 2;
+        }
+        else if (a > b) {
+            a = (a - b) / 2;
+        }
+        else {
+            b = (b - a) / 2;
         }
     }
     return a * (2 ** d);
